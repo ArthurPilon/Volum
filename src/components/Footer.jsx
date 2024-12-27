@@ -6,14 +6,14 @@ export default function Footer() {
     <>
       <div id="footer">
         <div id="footerbloc1">
-          <div id="logo">
+          <div id="logo" className="desktop-only">
             <img src={logo} alt="volumlogo" />
           </div>
           <div id="contact">
-            <h3>Contact</h3>
+            <h3 className="desktop-only">Contact</h3>
             <p>Adresse: </p>
             <p>Telephone: 07 87 86 66 17 <PhoneButton /></p> 
-            <p>mail: frederic.pilon@voluM.group</p>
+            <p>Mail: <a href="mailto:frederic.pilon@voluM.group">frederic.pilon@voluM.group</a></p>
           </div>
           <div id="socials"></div>
           {/* <div id="links">

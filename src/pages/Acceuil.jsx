@@ -34,8 +34,8 @@ export default function Accueil() {
               />
             </div>
             <div id="intro-texte">
-              <h3>Titre introduction</h3>
-              <h4>Sous titre</h4>
+              {/* <h3>Titre introduction</h3>
+              <h4>Sous titre</h4> */}
 
               <p>
               Un usage du béton dans la construction pleinement engagé dans <span>l’économie circulaire</span> ? <br></br><br></br>

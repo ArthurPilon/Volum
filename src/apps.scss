@@ -24,7 +24,7 @@ body {
   #phone-mail {
     display: flex;
     margin-right: 2%;
-    gap: 25px;
+    gap: 5%;
     align-items: center;
     #email-header {
       margin-right: 2%;
@@ -44,8 +44,10 @@ body {
       ul {
         display: flex;
         align-items: center;
-        gap: 50px;
+gap: 5%;
         list-style-type: none;
+        // padding-right: 15%;
+        // padding-left: 15%;
       }
       a {
         text-decoration: none;
@@ -123,7 +125,7 @@ main {
       #intro-texte {
         width: 50%;
         border-left: 1px solid black;
-        padding-left: 30px;
+        padding-left: 2%;
       }
     }
 
@@ -132,14 +134,17 @@ main {
       padding-top: 50px;
       padding-bottom: 50px;
       border-radius: 20px;
-      padding-right: 20px;
-      padding-left: 20px;
       color: white;
       text-align: justify;
+      width: 100%;
 
       .modules{
         display: flex;
         align-items: center;
+
+        .videos {
+          overflow: hidden;
+        }
       }
       h3 {
         font-size: 25px;
@@ -147,10 +152,6 @@ main {
 
       .videos {
         border-radius: 20px;
-        // position: relative;
-        // padding-bottom: 56.25%; /* Ratio 16:9 (hauteur/largeur = 9/16 = 0.5625) */
-
-        // overflow: hidden;
       }
 
       #module-text1 {
@@ -247,7 +248,7 @@ main {
 }
 
 
-@media (max-width: 1136px) {
+@media (max-width: 600px) {
 #header{
 
   display: flex;
@@ -257,21 +258,52 @@ main {
   }
 }
 
-#module-container{
-  width: 100%;
+#intro{
+  img {
+    display: none;
+  }
+}
+main {
+  #main-content {
+
+    #module-container{
+      width: 100%;
+      padding-left: 0px;
+      padding-right: 0px;
+      #module-text2 {
+      flex-direction: column;
+    }
+      #module-text4 {
+      flex-direction: column;
+    }
+      .module{
+        flex-direction: column;
+        align-items: center;
+        }
+        .videos {
+          overflow: hidden;
+        }
+        .videos iframe {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+        .mod-texte{
+          width: 80%;
+        }
+
+    }
 }
 
-.modules{
-  flex-direction: column;
+#footer {
+  #footerbloc1{
+    flex-direction: column;
+    .desktop-only{
+      display: none;
+    }
+  }
 }
 
-.videos {
-   overflow: hidden;
-}
-
-.videos iframe {
-  width: 100%;
-  height: 100%;
-}
 
 }
